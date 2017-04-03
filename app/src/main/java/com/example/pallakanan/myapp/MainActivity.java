@@ -16,12 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button button = (Button) findViewById(R.id.button);
+        final TextView textView = (TextView) findViewById(R.id.textView);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Main2Activity.class));
+//                startActivity(new Intent(MainActivity.this, Main2Activity.class));
+                textView.setText("My name is Pallak Anand and I love Yatin Kaushal.");
             }
         });
-        TextView textView = (TextView) findViewById(R.id.textView);
     }
 }
